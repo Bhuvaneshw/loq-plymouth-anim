@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=LOQ Sample
+Description=Simple animated LOQ-style Plymouth sample
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/custom-loq
+ScriptFile=/usr/share/plymouth/themes/custom-loq/loq.script

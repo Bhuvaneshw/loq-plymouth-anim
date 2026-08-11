@@ -1,0 +1,27 @@
+Window.SetBackgroundTopColor(0.02, 0.02, 0.02);
+Window.SetBackgroundBottomColor(0.02, 0.02, 0.02);
+
+frame = 0;
+frame_count = 424;
+sprite = Sprite(Image("frames/frame_0.png"));
+
+fun center() {
+    image = sprite.GetImage();
+    sprite.SetX(Window.GetWidth() / 2 - image.GetWidth() / 2);
+    sprite.SetY(Window.GetHeight() / 2 - image.GetHeight() / 2);
+}
+center();
+
+fun refresh_callback() {
+    frame++;
+    if (frame >= frame_count) {
+        frame = 0;
+    }
+
+    filename = "frames/frame_" + frame + ".png";
+    sprite.SetImage(Image(filename));
+    center();
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);
+Plymouth.SetRefreshRate(60);
