@@ -1,6 +1,11 @@
 # LOQ Plymouth sample
 
-**Clone the repo then**
+## Sample
+![Sample Video](sample.gif)
+
+---
+
+## Clone the repo then
 
 ## Install
 
